@@ -1,0 +1,37 @@
+html body #ramdan-notification {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    max-width: 550px;
+    min-width: 350px;
+    direction: rtl;
+    padding: 17px;
+    overflow: hidden;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, .85);
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .1);
+    color: #000;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 0.25rem;
+    z-index: 9999;
+}
+
+html body #ramdan-notification>div {
+    float: right;
+}
+
+html body #ramdan-notification div:first-of-type {
+    width: 8%;
+    font-size: 12px;
+}
+
+html body #ramdan-notification div:nth-of-type(2) {
+    width: 92%;
+}
+
+#ramdan-notification-close {
+    cursor: pointer;
+}

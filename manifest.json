@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Ayat Ramdan",
+    "version": "1.0.0",
+    "description": " Get aya from the Quran every 15 minutes during your browsing 💻 stay connected with the words of Allah. 💚 🕋 ",
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "js": ["./index.js"],
+        "css": ["main.css"]
+    }],
+    "browser_action": {
+        "default_popup": "./index.html"
+    },
+    "icons": {
+        "16": "./img/icon1.png",
+        "48": "./img/icon1.png",
+        "128": "./img/icon1.png"
+    }
+}
