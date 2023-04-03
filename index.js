@@ -11,7 +11,6 @@ const request = async(ayaNumber) => {
     createNotification(myJson)
 }
 
-request(randomNumber(1, 6236));
 setInterval(() => request(randomNumber(1, 6236)), IntervalTimeByMs);
 
 
